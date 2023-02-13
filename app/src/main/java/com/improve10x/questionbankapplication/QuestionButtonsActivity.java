@@ -10,6 +10,9 @@ public class QuestionButtonsActivity extends AppCompatActivity {
     Button question1Btn;
     Button question2Btn;
     Button question3Btn;
+    Button checkBoxQno1Btn;
+    Button checkBoxQno2Btn;
+    Button checkBoxQno3Btn;
 
 
     @Override
@@ -19,12 +22,42 @@ public class QuestionButtonsActivity extends AppCompatActivity {
         intiViews();
         question1Btn();
         handleQuestion2Btn();
+        handleQuestion3Btn();
+        handleCheckBoxQno1Btn();
+        handleCheckBoxQno2Btn();
+        handleCheckBoxQno3Btn();
 
+    }
+
+    private void handleCheckBoxQno3Btn() {
+    }
+
+    private void handleCheckBoxQno2Btn() {
+    }
+
+    private void handleCheckBoxQno1Btn() {
+    }
+
+    private void handleQuestion3Btn() {
+        question3Btn.setOnClickListener(v -> {
+            String question = "What will be the output when input is 6. It must return Fizz if the number is divisible by 3 It must return Buzz if the number is divisible by 5.  It must return FizzBuzz if the number is divisible by  both 3 and 5. It must return a number if none of the above conditions are true.";
+            String optionA = "Fizz";
+            String optionB = "Buzz";
+            String optionC = "Fizzbuzz";
+            String optionD = "6";
+            navigateToQuestionDetails(question,optionA,optionB,optionC,optionD);
+
+        });
     }
 
     private void handleQuestion2Btn() {
         question2Btn.setOnClickListener(v -> {
-            String question2 = ""
+            String question = "Given a = 10, b = 20, return true the sum of both numbers is less than hundred  otherwise return false";
+            String optionA = "true";
+            String optionB = "false";
+            String optionC = "All of the above";
+            String optionD = "None of the above";
+            navigateToQuestionDetails(question,optionA,optionB,optionC,optionD);
         });
 
     }
@@ -55,6 +88,9 @@ public class QuestionButtonsActivity extends AppCompatActivity {
         question1Btn = findViewById(R.id.question1_btn);
         question2Btn = findViewById(R.id.question2_btn);
         question3Btn = findViewById(R.id.question3_btn);
+        checkBoxQno1Btn = findViewById(R.id.qno1_cb);
+        checkBoxQno2Btn = findViewById(R.id.qno2_cb);
+        checkBoxQno3Btn = findViewById(R.id.qno3_cb);
 
     }
 
