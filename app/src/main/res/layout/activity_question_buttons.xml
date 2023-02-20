@@ -26,20 +26,38 @@
         android:text="Question No 3" />
 
     <Button
-        android:id="@+id/qno1_cb"
+        android:id="@+id/qno1_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="checkBox QNo 1" />
 
     <Button
-        android:id="@+id/qno2_cb"
+        android:id="@+id/qno2_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="checkBox QNo 2" />
 
     <Button
-        android:id="@+id/qno3_cb"
+        android:id="@+id/qno3_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="checkBox QNo 3" />
+
+    <Button
+        android:id="@+id/spinner1_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spinner Q no1" />
+
+    <Button
+        android:id="@+id/spinner2_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spinner Q No2" />
+
+    <Button
+        android:id="@+id/spinner3_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spinner Q No3" />
 </LinearLayout>
